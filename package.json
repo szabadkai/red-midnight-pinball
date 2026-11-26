@@ -1,0 +1,21 @@
+{
+  "name": "red-midnight-pinball",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A native PICO-8 woodland pinball adventure starring Red and the creatures of Lantern Wood.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node tools/pinball.mjs play",
+    "play": "npm start",
+    "edit": "node tools/pinball.mjs edit",
+    "assemble": "node tools/pinball.mjs assemble",
+    "build": "node tools/pinball.mjs build",
+    "test": "node --test tests/*.test.mjs",
+    "test:native": "node tools/check-pinball.mjs",
+    "capture": "node tools/capture-pinball.mjs",
+    "release:package": "node tools/release.mjs"
+  }
+}

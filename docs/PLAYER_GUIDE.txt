@@ -1,0 +1,40 @@
+RED: MIDNIGHT PINBALL — v1.0.0
+https://github.com/szabadkai/red-midnight-pinball
+
+CONTROLS
+Left / Right: flippers and RED lane-light switching
+Hold X or Down, then release: charge and launch
+Z: nudge (three rapid nudges trigger tilt)
+Hold Up: see upper playfield
+Esc / Enter: pause, field guide, sound and motion settings
+X at title: play; Z at title: field guide
+
+Release X after starting a game, then hold it again to charge the first shot.
+Full charge reaches the upper orbit. Hold a flipper to catch, release to roll,
+then flip to aim. Eight seconds of lantern save follow each launch.
+
+THE JOURNEY
+1. Hit six blue bumpers to defeat the Wolf.
+2. Shoot the glowing left cottage to rescue Grandmother and start multiball.
+3. Hit red bumpers and lantern banks to break the Briar Hart.
+Victory starts a harder journey. Three balls per game; best score persists.
+
+BONUSES
+RED lanes increase the multiplier to 5x. Two sets start three-ball multiball.
+A RED lane within 2.5 seconds of launch awards a 2500 skill bonus.
+Three ordinary scoop visits start multiball. Shoot the right well during
+multiball for a 5000 jackpot. Complete lanterns for ball save outside the boss.
+
+BROWSER BUILD
+Extract the whole archive; open index.html and click Play.
+Keep index.html and red-midnight.js together. If local files are restricted,
+run python3 -m http.server 8000 in the extracted directory, then open
+http://localhost:8000 in your browser.
+
+PICO-8 CARTRIDGE
+Drag red-midnight.p8.png into PICO-8, then type RUN. The editable .p8 file
+contains the same complete game. Native PICO-8 authoring tools are not bundled.
+
+SOURCE AND RIGHTS
+See CREDITS.md and ASSET_RIGHTS.md. Public source availability does not grant
+a blanket reuse license. PICO-8 and its exported runtime are by Lexaloffle.

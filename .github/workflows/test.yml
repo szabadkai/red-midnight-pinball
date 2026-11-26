@@ -1,0 +1,20 @@
+name: Cartridge checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Lua
+        run: sudo apt-get update && sudo apt-get install -y lua5.4
+      - name: Verify committed cartridge and simulation
+        run: npm test
+      - name: Verify reproducible assembly
+        run: npm run assemble && git diff --exit-code -- red-midnight.p8
